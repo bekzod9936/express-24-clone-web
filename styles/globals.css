@@ -13,4 +13,18 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --radius: 8px;
+  --black: #333;
+  --red: #ff3a3a;
+  --grey: #bfbfbf;
+  --blue: #2f75ec;
+  --green: #93e394;
+  --yellow: #fde61b;
+  --grey-light: #f0f0f0;
+  --border-color: #dedede;
 }
