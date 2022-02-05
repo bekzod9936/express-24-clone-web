@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './footer.module.scss';
 import { useTranslation } from 'react-i18next';
 import { useCallback, useState } from 'react';
-import Down from 'public/down.svg';
+import Down from 'public/icons/down.svg';
 import {
   ISProps,
   IPProps,

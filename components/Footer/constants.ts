@@ -1,6 +1,6 @@
-import Email from 'public/email.svg';
-import FaceBook from 'public/facebook.svg';
-import Instagram from 'public/instagram.svg';
+import Email from 'public/icons/email.svg';
+import FaceBook from 'public/icons/facebook.svg';
+import Instagram from 'public/icons/instagram.svg';
 
 export interface ISProps {
   path: string;

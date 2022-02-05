@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Logo from 'public/header-logo.svg';
-import Compos from 'public/compos.svg';
-import search from 'public/search.svg';
+import Logo from 'public/icons/header-logo.svg';
+import Compos from 'public/icons/compos.svg';
+import search from 'public/icons/search.svg';
 import styles from './navbar.module.scss';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
