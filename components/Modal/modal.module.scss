@@ -1,0 +1,32 @@
+.container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3000;
+  position: fixed;
+  overflow-x: hidden;
+  background-color: rgba(31, 32, 41, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 100ms 100ms ease;
+}
+
+.wrap {
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 30%);
+  width: fit-content;
+  height: fit-content;
+}
+
+.visible {
+  pointer-events: auto;
+  opacity: 1;
+  transition: all 100ms ease-in-out;
+}

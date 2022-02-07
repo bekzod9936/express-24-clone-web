@@ -1,0 +1,87 @@
+.container {
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  .closebutton {
+    top: 20px;
+    right: 20px;
+    z-index: 99999;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+  }
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+  .pointer {
+    z-index: 3000;
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 17px);
+  }
+  .searchmap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 3000;
+    position: absolute;
+    position: relative;
+    .searchwrap {
+      top: 20px;
+      width: fit-content;
+      position: absolute;
+    }
+  }
+  .ul {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    min-width: 270px;
+    max-width: 350px;
+    & > li {
+      list-style: none;
+      cursor: pointer;
+      font-weight: normal;
+      font-size: 16px;
+      color: #223367;
+      padding: 5px 0 5px 20px;
+    }
+    & > li:hover {
+      background-color: rgba(96, 110, 234, 0.1);
+    }
+  }
+  .mapselect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    z-index: 3000;
+    position: absolute;
+    bottom: 70px;
+    .selectwrap {
+      width: fit-content;
+      position: absolute;
+    }
+    .button {
+      width: 100%;
+      padding: 0 30px;
+      height: 45px;
+      border: none;
+      outline: none;
+      margin-bottom: 10px;
+      background-color: var(--yellow);
+    }
+  }
+}

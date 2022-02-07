@@ -1,10 +1,6 @@
-import Email from 'public/icons/email.svg';
-import FaceBook from 'public/icons/facebook.svg';
-import Instagram from 'public/icons/instagram.svg';
-
 export interface ISProps {
   path: string;
-  icon: any;
+  icon: string;
   alt: string;
 }
 
@@ -19,9 +15,9 @@ export interface ILProps {
 }
 
 export const socialList: ISProps[] = [
-  { path: '/', icon: FaceBook, alt: 'facebook' },
-  { path: '/', icon: Instagram, alt: 'instagram' },
-  { path: '/', icon: Email, alt: 'email' },
+  { path: '/', icon: '/icons/facebook.svg', alt: 'facebook' },
+  { path: '/', icon: '/icons/instagram.svg', alt: 'instagram' },
+  { path: '/', icon: '/icons/email.svg', alt: 'email' },
 ];
 
 export const pagesList: IPProps[] = [

@@ -1,0 +1,26 @@
+.wrapinput {
+  display: flex;
+  align-items: center;
+  min-width: 270px;
+  position: relative;
+  .search {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .input {
+    height: 40px;
+    width: 100%;
+    border-radius: var(--radius);
+    padding-right: 40px;
+    padding-left: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  .input::placeholder {
+    color: var(--grey);
+  }
+}

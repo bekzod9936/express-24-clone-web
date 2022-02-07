@@ -3,7 +3,6 @@ import Image from 'next/image';
 import styles from './footer.module.scss';
 import { useTranslation } from 'react-i18next';
 import { useCallback, useState } from 'react';
-import Down from 'public/icons/down.svg';
 import {
   ISProps,
   IPProps,
@@ -13,6 +12,7 @@ import {
   linkList,
   langList,
 } from './constants';
+import Select from 'components/Select';
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -66,18 +66,11 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.rightside}>
-          <select onChange={handleChange} defaultValue={lang}>
-            {langList.map(({ value, label }: ILProps) => {
-              return (
-                <option value={value} key={value}>
-                  {t(label)}
-                </option>
-              );
-            })}
-          </select>
-          <div className={styles.down}>
-            <Image src={Down} alt="down" width={12} height={15} />
-          </div>
+          <Select
+            options={langList}
+            defaultValue={lang}
+            onChange={handleChange}
+          />
         </div>
       </div>
     </div>

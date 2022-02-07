@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './card.module.scss';
-import Star from 'public/icons/star.svg';
-import MacBro from 'public/items/macbro.jpeg';
-import MacBroLogo from 'public/items/macbrologo.jpeg';
 
 interface IProps {
   value: any;
@@ -26,7 +23,12 @@ const Card = ({ value }: IProps) => {
               <div className={styles.title}>{name}</div>
               <div className={styles.category}>{category}</div>
               <div className={styles.wrapfeedback}>
-                <Image src={Star} alt="star" width={15} height={15} />
+                <Image
+                  src={'/icons/star.svg'}
+                  alt="star"
+                  width={15}
+                  height={15}
+                />
                 <div className={styles.feedback}>Мало отзывов</div>
               </div>
             </div>

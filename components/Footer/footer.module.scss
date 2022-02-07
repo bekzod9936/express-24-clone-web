@@ -50,22 +50,5 @@
     position: relative;
     width: fit-content;
     height: fit-content;
-    & > select {
-      background-color: white;
-      outline: none;
-      border: none;
-      border-radius: var(--radius);
-      height: 45px;
-      min-width: 120px;
-      padding-left: 12px;
-      -webkit-appearance: none;
-      color: var(--black);
-    }
-
-    .down {
-      top: calc(50% - 7px);
-      right: 10px;
-      position: absolute;
-    }
   }
 }
