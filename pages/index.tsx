@@ -9,6 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrap}>
+        <Populars />
         <Categories />
         <div>Все маркет</div>
         <div className={styles.wraplist}>

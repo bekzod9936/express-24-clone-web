@@ -8,9 +8,11 @@ const useScroll = () => {
   const [client, setClient] = useState(0);
 
   useEffect(() => {
-    setScrollWrap(ref.current);
-    setScrollMax(ref.current.scrollWidth);
-    setClient(ref.current.clientWidth);
+    if (ref.current) {
+      setScrollWrap(ref.current);
+      setScrollMax(ref.current.scrollWidth);
+      setClient(ref.current.clientWidth);
+    }
   }, [ref]);
 
   const onScrollLeft = (scrollAmount: any) => {
